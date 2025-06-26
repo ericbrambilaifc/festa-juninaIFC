@@ -1,5 +1,5 @@
 <?php
-require_once "cursoBD.php";
+require_once "ConexaoBD.php";
 class CursoDAO{
     static function buscarCursos(){
         $conexao = ConexaoBD::conectar();
