@@ -37,14 +37,14 @@
                         <label for="nome" class="form-label">Nome da Comida</label>
                         <input type="text" class="form-control" name="nome" id="nome" required>
 
-                        <select class="form-select mt-3 mb-3" aria-label="Selecione a turma" name="turma" required>
+                        <select name="idcurso" class="form-select mt-3 mb-3" aria-label="Selecione a turma" name="turma" required>   <!-- pega o id curso -->
                             <option selected>Selecione a turma</option>
                             <?php
                             for ($i = 0; $i < count($cursos); $i++) {
                                 $curso = $cursos[$i];
                                 //echo "<option value='" . $curso['nome'] . '">" . $curso['nome'] . "</option>";
                                 ?>
-                                <option value='<?=$curso['idcurso']?>'><?=$curso['nome']?></option>
+                                <option value='<?=$curso['idcurso']?>'><?=$curso['nome']?></option>    --   <!-- pega os dados -->
                             <?php    
                             }
                             ?>
