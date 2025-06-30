@@ -30,14 +30,14 @@
         <div class="row">
             <legend class="mt-3">Cadastro de Comidas</legend>
 
-            <form action="cadastro.php" method="POST">
+            <form action="cadastro-comidaDAO.php" method="POST">
                 <div class="row mb-3">
 
                     <div class="col-6">
                         <label for="nome" class="form-label">Nome da Comida</label>
                         <input type="text" class="form-control" name="nome" id="nome" required>
 
-                        <select name="idcurso" class="form-select mt-3 mb-3" aria-label="Selecione a turma" name="turma" required>   <!-- pega o id curso -->
+                        <select name="idcurso" class="form-select mt-3 mb-3" aria-label="Selecione a turma" required>   <!-- pega o id curso -->
                             <option selected>Selecione a turma</option>
                             <?php
                             for ($i = 0; $i < count($cursos); $i++) {
